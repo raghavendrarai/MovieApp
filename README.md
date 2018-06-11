@@ -6,7 +6,7 @@ A collection of movie details includes rating, genres and short description of e
   #### Bootstrap v4.1.1
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
-To install the CLI using Node and npm use command `npm install -g @angular/cli`.
+To install Angular CLI using Node and npm, use command `npm install -g @angular/cli`.
 
 ## Development server
 
