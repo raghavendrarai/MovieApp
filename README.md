@@ -1,6 +1,20 @@
 # MovieApp
 A collection of movie details includes rating, genres and short description of each movie.
 
+### Features:
+
+- **Movies List**
+  - List of Movies from collection.
+  - Search by name.
+  - Searcch based on genre.
+  - Clicking on a particular go to Movie details page.
+
+- **Movie detail**
+  - Contains information about the movie.
+  - Click the genre to filter all movies based on the selected genre.
+  - Go back to the previous page.
+
+
 ### Technologies Used in this project:
   #### Angular v5.2.0
   #### Bootstrap v4.1.1
