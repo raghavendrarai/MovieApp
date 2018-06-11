@@ -1,0 +1,26 @@
+<div class="details cover-container d-flex w-75 h-50 p-3 mx-auto flex-column">
+		<div>
+			<span class="go-back" (click)="goBack()">Go back</span>
+			<h1>{{data.name}}</h1>
+			<a [routerLink]="['/home', genre]" *ngFor = "let genre of data.genres"> <span class="genres"> {{genre}} </span></a>
+		</div>
+		<div class="card mb-4 box-shadow">
+			<img class="card-img-top w-50 mx-auto" src="../assets/images/movie-covers/{{ data.img }}">		
+			<div class="card-body">
+				<div class="row info">
+					<div class="col-md-6 row">
+						<div class="rating-text">Ratings </div>
+						<div class="rating-fill box-sizing"><div [ngStyle]="{'width':(data.rate * 10) + '%'}"></div></div>
+						<span> {{data.rate }}</span>
+					</div>
+					<div class="col-md-6">Duration : {{data.length }} </div>
+				</div>
+				<div class="row description">
+					<div class="col-md-12">
+						<div class="row"><h6>Description : </h6></div>
+						<div class="row">{{ data.description }}</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
