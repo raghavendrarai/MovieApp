@@ -15,6 +15,7 @@ export class MovieListComponent {
 	movieList:Movie[];
 	genres:any[];
 	searchGenre:string;
+	searchName:string;
 	
 	constructor(private route: ActivatedRoute) {	
 		this.movieList = movies.sort((a,b)=>{

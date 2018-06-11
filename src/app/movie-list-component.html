@@ -2,9 +2,8 @@
 		<div class="navbar navbar-default">
 			<div class="container-fluid">
 				<div class="container-fluid navbar-header row">
-					<a [routerLink]="['']"><div class="col-md-4"><h1>Movies</h1></div></a>
 					<div class="col-md-4 form-group">Search : <input [(ngModel)] = "searchName" placeholder="Enter movie name"/></div>
-					<div class="col-md-4 form-group">Filter By Genre
+					<div class="col-md-4 form-group">Select Genre
 						<select [(ngModel)] = "searchGenre" [value]="searchGenre">
 							<option value="">All</option>
 							<option *ngFor = "let genre of genres" [value]="genre">{{ genre }}</option>
@@ -16,15 +15,16 @@
 		<div class="">
 			<div class="row">
 				<div *ngFor="let movie of movieList | filter : searchName : searchGenre" class="col-md-3 card mb-4 box-shadow list-item">
-				<a [routerLink]="['/search', movie.id]">
-					<img class="card-img-top" src="../assets/images/movie-covers/{{ movie.img }}">						
-					<div class="card-body">{{ movie.name }}</div>
-					<div class="tool-tip row">
-						<span class="">Duration : {{movie.length}} </span><br/>
-						<span class="">Rating : {{movie.rate}} </span><br/>
-						<span class=""><span class="genres" *ngFor = "let genre of movie.genres"> {{genre}} </span> </span>
-					</div>
-				</a>
+					<a [routerLink]="['/search', movie.id]">
+						<img class="card-img-top" src="../assets/images/movie-covers/{{ movie.img }}" alt="{{movie.key}}">						
+						<div class="card-body">{{ movie.name }}</div>
+						<div class="tool-tip row">
+							<span class="">Duration : {{movie.length}} </span><br/>
+							<span class="">Rating : {{movie.rate}} </span><br/>
+							<span class=""><span class="genres" *ngFor = "let genre of movie.genres"> {{genre}} </span> </span>
+						</div>
+					</a>
 				</div>
+				<div class="no-data col-md-12" *ngIf="(movieList | filter : searchName : searchGenre).length === 0">No Matching Movies...!</div>
 			</div>
 		</div>

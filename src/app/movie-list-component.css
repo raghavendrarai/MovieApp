@@ -30,3 +30,10 @@ a {
 .list-item:hover .tool-tip{
 	display:block;
 }
+select {
+	text-transform: capitalize;
+}
+.no-data{
+	text-align:center;
+	margin:20% 0;
+}

@@ -10,7 +10,7 @@
 				<div class="row info">
 					<div class="col-md-6 row">
 						<div class="rating-text">Ratings </div>
-						<div class="rating-fill box-sizing"><div [ngStyle]="{'width':(data.rate * 10) + '%'}"></div></div>
+						<div class="rating-fill box-sizing"><div [ngStyle]="{'width': getPercentage(data.rate) + '%'}"></div></div>
 						<span> {{data.rate }}</span>
 					</div>
 					<div class="col-md-6">Duration : {{data.length }} </div>

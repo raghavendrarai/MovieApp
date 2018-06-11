@@ -24,4 +24,8 @@ export class MovieDetailComponent {
 	goBack(){
 		this.location.back();
 	}
+
+	getPercentage(value){
+		return value * 10;
+	}
 };
