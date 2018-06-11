@@ -5,8 +5,8 @@ A collection of movie details includes rating, genres and short description of e
 
 - **Movies List**
   - List of Movies from collection.
-  - Search by name.
-  - Searcch based on genre.
+  - Search movie by name.
+  - Search movie by genre.
   - Clicking on a particular go to Movie details page.
 
 - **Movie detail**
