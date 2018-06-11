@@ -1,9 +1,9 @@
 # MovieApp
 A collection of movie details includes rating, genres and short description of each movie.
 
-# Technologies Used in this project:
-  ### Angular v5.2.0
-  ### Bootstrap v4.1.1
+### Technologies Used in this project:
+  #### Angular v5.2.0
+  #### Bootstrap v4.1.1
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
 ## Development server
