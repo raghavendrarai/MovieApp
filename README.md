@@ -1,5 +1,5 @@
 # MovieApp
-A collection of movie details includes rating, genres and short description of each movie.
+A collection of movie details includeing rating, genres and short description of each movie.
 
 ### Features:
 
