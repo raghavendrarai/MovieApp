@@ -16,7 +16,7 @@
 			<div class="row">
 				<div *ngFor="let movie of movieList | filter : searchName : searchGenre" class="col-md-3 card mb-4 box-shadow list-item">
 					<a [routerLink]="['/search', movie.id]">
-						<img class="card-img-top" src="../assets/images/movie-covers/{{ movie.img }}" alt="{{movie.key}}">						
+						<img class="card-img-top" src="assets/images/movie-covers/{{ movie.img }}" alt="{{movie.key}}">						
 						<div class="card-body">{{ movie.name }}</div>
 						<div class="tool-tip row">
 							<span class="">Duration : {{movie.length}} </span><br/>
