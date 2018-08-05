@@ -1,6 +1,6 @@
 # MovieApp
 A collection of movie details includeing rating, genres and short description of each movie.
-
+##Demo raghavendrarai.github.io/MovieApp/
 ### Features:
 
 - **Movies List**
